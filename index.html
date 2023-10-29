@@ -1,4 +1,4 @@
-<!DOCTYPE html>     <!Informs that this is an HTML document>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,22 +10,29 @@
 
 
 <body>
+
     <div class="groceries-list-wrapper">
         <h2> Groceries List </h2>
-
-        <form name="grocery-adder">                            <! form creates a field for user input>
+        <p> Insert your grocery item in the box below: </p>
+        <form class="form-control" name="grocery-adder">                            <! form creates a field for user input>
             <input type="text" id="item-entry-box" />
         </form>
 
-        <button id="add-button" class="pretty-button"> Add Item </button>
-        <button id="delete-all-button" class="pretty-button"> Clear All </button>
-        <p> Click the buttons next to the items to change their stock property!</p>
-        <p> List of in-stock items:</p>
-        <ul id="groceries-list-instock">
+        <button id="add-button" class="add-button"> Add Item </button>
+        <button id="delete-input-button" class="delete-button"> Clear Input</button>
+        <button id="delete-all-button" class="delete-button"> Clear All </button>
+        
+        <p> Click the buttons next to the items to switch between in- and out-of-stock!</p>
+
+        <div class="instock-and-outofstock-lists">
+            <p class="bold-paragraph"> List of <span style="color: green"> in-stock </span> items:</p>
+            <ul class="instock-list" id="groceries-list-instock">
+            </ul>
+            
+            <p class="bold-paragraph"> List of <span style="color: red"> out-of-stock </span> items:</p>
+            <ul class="outofstock-list" id="groceries-list-outofstock">
         </ul>
-        <p> List of out-of-stock items:</p>
-        <ul id="groceries-list-outofstock">
-        </ul>
+        </div>
 
     </div>
 

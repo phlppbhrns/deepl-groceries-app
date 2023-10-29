@@ -1,6 +1,52 @@
 h2 {
-    color: green
+    color: black;
+    font-weight: bold;
+    background-color:antiquewhite;
+    padding: 10px;
 }
-p {
-    color:  black
+
+li {
+    list-style-type: circle;
+}
+
+.bold-paragraph {
+    font-weight: bold;
+}
+
+div.groceries-list-wrapper {
+    position: static;
+    border: 10px solid #191690;
+    padding: 10px;
+}
+
+div.instock-and-outofstock-lists {
+    display: inline;
+}
+
+.lists {
+    font-weight: bold;
+}
+
+.form-control {
+    display: inline-block;
+}
+
+.add-button {
+    color: green;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.delete-button {
+    color: red;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.instock-list {
+    color: green;
+}
+
+.outofstock-list {
+    color: red;
 }

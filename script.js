@@ -2,10 +2,15 @@ var addButton = document.getElementById("add-button");
 var InputBox = document.getElementById("item-entry-box");
 var instockGroceriesList = document.getElementById("groceries-list-instock");
 var outofstockGroceriesList = document.getElementById("groceries-list-outofstock");
-var deleteButton = document.getElementById("delete-all-button")
+var deleteAllButton = document.getElementById("delete-all-button");
+var deleteInputButton = document.getElementById("delete-input-button");
 // create an event listener which acts when it hears what we define (here, it runs the addGroceryItem function)
 addButton.addEventListener("click", addGroceryItem)
-deleteButton.addEventListener("click", deleteAll)
+deleteAllButton.addEventListener("click", deleteAll)
+deleteInputButton.addEventListener("click", function () {
+    var input = document.getElementById("item-entry-box");
+    input.value = "";
+})
 
 function addGroceryItem() {
     // Function for the add button
@@ -84,5 +89,9 @@ function deleteAll() {
         outofstockGroceriesList.removeChild(outofstockGroceriesList.firstChild);
     }
 }
+function deleteInput() {
+
+}
+
 
 
